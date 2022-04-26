@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Google Fonts "LATO - 300; 400; 900"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6116935b6f.js" crossorigin="anonymous"></script>
+    <title>Nektar - Inicio</title>
+</head>
+<body>
+    <header  class="header">
+        <h1 class="header__h1">NEKTAR</h1>
+        
+        <div class="header__busq">
+            <label for="búsqueda"></label>
+            <input class="header__busq--1" type="text" id="búsqueda" placeholder="  Buscar">
+            <button class="header__busq--but">Buscar</button>
+        </div>
+        <i class="fas fa-bars"></i>
+        <div class="header__nav"> <!-- nav-->
+            <nav>
+                <ul>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="index.html" >Incio</a></li>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="pages/productos.html">Productos</a></li>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="pages/promociones.html">Promociones</a></li>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>    
+        </div>    
+    </header>        
+    <main class="main">
+        <div class="main__portada"><!--portada/banner-->
+                <!-- <img class="main__portada" src="media/banner.jpg" alt="portada"> -->
+        </div>
+        <article class="main__article"><!--foto-productos-->
+            <div class="main__artic__div">
+                <img class="main__img__prod" src="media/producto2.jpg" alt="producto1">                
+                <p class="main__textophoto">Producto 1 <span>$100</span></p>
+            </div>
+            
+            <div class="main__artic__div">
+                <img class="main__img__prod" src="media/producto2.jpg" alt="producto2">
+                <p class="main__textophoto">Producto 2 <span>$100</span></p>
+            </div>
+            
+            <div class="main__artic__div">
+                <img class="main__img__prod" src="media/producto2.jpg" alt="producto3">
+                <p class="main__textophoto">Producto 3 <span>$100</span></p>
+            </div>
+        </article>
+        <div class="mapa">
+            <div>
+                <p class="main__mapa--txt">INFO SOBRE ENVIOS Y RETIROS</p>
+            </div>
+            <div class="main__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895092!2d-58.38375908495455!3d-34.60373446500565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1648764126452!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>        
+    <footer class="footer__grid">
+                <!-- <img class="footer__logo" src="media/logo2.png"> -->
+                <h1 class="footer__h1--grid">NEKTAR</h1>
+            
+            <div class="footer__links-externos--grid"> <!--links externos-->
+                <div class="footer__links-externos--1">
+                    <a href="https://instagram.com" target="_blank">
+                        <img class="logo-redes" src="/media/logo-instagram1.png">
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <img class="logo-redes" src="/media/logo-whatsapp1.png">
+                    </a>    
+                </div>
+                <ul class="footer__links-externos--2">                
+                    <li class="footer__div__li"><a class="footer__div__a--1" target="_blank" href="https://www.instagram.com/">Instagram</a></li>                
+                    <li class="footer__div__li"><a class="footer__div__a--2" target="_blank" href="https://wa.me/1234567890">1234567890</a></li>
+                </ul>
+            </div>    
+    </footer>
+</body>
+</html>

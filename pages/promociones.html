@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!--Google Fonts "LATO - 300; 400; 900"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6116935b6f.js" crossorigin="anonymous"></script>
+    <title>Nektar - Promociones</title>
+</head>
+<body>
+    <header  class="header">
+        <h1 class="header__h1">NEKTAR</h1>
+        
+        <div class="header__busq">
+            <label for="búsqueda"></label>
+            <input class="header__busq--1" type="text" id="búsqueda" placeholder="  Buscar">
+            <button class="header__busq--but">Buscar</button>
+        </div>
+        <i class="fas fa-bars"></i>
+        <div class="header__nav"> <!-- nav-->
+            <nav>
+                <ul>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="../index.html" >Incio</a></li>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="productos.html">Productos</a></li>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="promociones.html">Promociones</a></li>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                    <li class="header__nav--li"><a class="header__nav--txt" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>    
+        </div>    
+    </header>
+    
+    <main class="main">
+        <div class="main__ord"> <!-- ordern por:-->
+            <label for="tipo">Elige motivo</label>
+            <select name="tipo" id="tipo">
+                <option value="mejor descuento">Mejor descuento</option>
+                <option value="mayor precio">Mayor precio</option>
+                <option value="menor precio">Menor precio</option>  
+            </select>
+        </div>
+        <section class="main--productos"><!--imágenes!-->
+            <div class="main__artic__div">
+                <img class="main__img__prod" height="400" width="300" src="../media/producto2.jpg" alt="producto1">
+                <p class="main__textophoto">promoción 1 <span>$99</span></p>
+            </div>
+            <div class="main__artic__div">
+                <img class="main__img__prod" height="400" width="300" src="../media/producto2.jpg" alt="producto2">
+                <p class="main__textophoto">promoción 2 <span>$99</span></p>
+            </div>
+            <div class="main__artic__div">
+                <img class="main__img__prod" height="400" width="300" src="../media/producto2.jpg" alt="producto3">
+                <p class="main__textophoto">promoción 3 <span>$99</span></p>
+            </div>
+        </section>
+        <section class="main--productos">
+            <div class="main__artic__div">
+                <img class="main__img__prod" height="400" width="300" src="../media/producto2.jpg" alt="producto4">
+                <p class="main__textophoto">producto 4 <span>$99</span></p>
+            </div>
+            <div class="main__artic__div">
+                <img class="main__img__prod" height="400" width="300" src="../media/producto2.jpg" alt="producto5">
+                <p class="main__textophoto">producto 5 <span>$99</span></p>
+            </div>
+            <div class="main__artic__div">
+                <img class="main__img__prod" height="400" width="300" src="../media/producto2.jpg" alt="producto6">
+                <p class="main__textophoto">producto 6 <span>$99</span></p>
+            </div>
+        </section>
+    </main>
+      
+    <footer>
+        <div class="footer__div">
+            <div>
+                <!-- <img class="footer__logo" src="media/logo2.png"> -->
+                <h1 class="header__h1">NEKTAR</h1>
+            </div>
+            
+            <div class="footer__links-externos"> <!--links externos-->
+                <div class="footer__links-externos--1">
+                    <a href="https://instagram.com" target="_blank">
+                        <img class="logo-redes" src="/media/logo-instagram1.png">
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <img class="logo-redes" src="/media/logo-whatsapp1.png">
+                    </a>    
+                </div>
+                <ul class="footer__links-externos--2">                
+                    <li class="footer__div__li"><a class="footer__div__a--1" target="_blank" href="https://www.instagram.com/">Instagram</a></li>                
+                    <li class="footer__div__li"><a class="footer__div__a--2" target="_blank" href="https://wa.me/1234567890">1234567890</a></li>
+                </ul>
+            </div>    
+        </div>
+    </footer>
+</body>
+</html>
