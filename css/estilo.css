@@ -35,10 +35,25 @@ body {
     
     padding-left: 0.6rem;
     transition: transform 1s;
+
+    animation-name: h1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes h1 {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
 }
 
 .header__h1:hover {
     transform: skew(2deg);
+
 }
 
 .header__busq {
@@ -310,6 +325,7 @@ form div {
 
 .main__textophoto:hover {
     transform: scale(1.1);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.451), rgba(255, 255, 255, 0.177));
 }
 
 .main__textophoto1 {
@@ -433,6 +449,7 @@ span {
     font-size: 1.25rem;
 
     margin: 1.8rem -1.25rem;
+    font-weight: bold;
 }
 
 .footer__div__a--2 {
@@ -441,6 +458,7 @@ span {
     font-size: 1.25rem;
     
     margin: 1.8rem -1.25rem;
+    font-weight: bold;
 }
 
 .footer__div__li {
