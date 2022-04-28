@@ -288,9 +288,14 @@ form div {
     
     margin-top: 1rem;
     margin-bottom: 0.6rem;
-    margin-left: 11rem;
+    margin-left: 10.5rem;
 
     color: white;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.451), rgba(255, 255, 255, 0.177));
+    border: solid 0.1rem rgba(255, 255, 255, 0.516);
+    text-align: center;
+    width: 11rem;
+
 }
 
 .main__textophoto1 {
