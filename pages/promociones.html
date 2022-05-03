@@ -8,7 +8,7 @@
     <!--bootstrap-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--script-->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <!--Google Fonts "LATO - 300; 400; 900"-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,14 +40,27 @@
     </header>
     
     <main class="main">
-        <div class="main__ord"> <!-- ordern por:-->
+        <div class="alert alert-danger fs-5 text-decoration-underline text-end" role="alert">
+            PROHIBIDA LA VENTA A MENORES DE 18 AÑOS.
+          </div>
+        <!-- <div class="main__ord">
             <label for="tipo">Elige motivo</label>
             <select name="tipo" id="tipo">
                 <option value="mejor descuento">Mejor descuento</option>
                 <option value="mayor precio">Mayor precio</option>
                 <option value="menor precio">Menor precio</option>  
             </select>
-        </div>
+        </div> -->
+        <div class="dropdown container">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Ordenar por
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Mejor descuento</a></li>
+              <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+              <li><a class="dropdown-item" href="#">Menor precio</a></li>
+            </ul>
+          </div>
         <section class="main--productos"><!--imágenes!-->
             <div class="main__artic__div">
                 <img class="main__img__prod" height="400" width="300" src="../media/producto2.jpg" alt="producto1">
@@ -76,6 +89,7 @@
                 <p class="main__textophoto">producto 6 <span>$99</span></p>
             </div>
         </section>
+
     </main>
       
     <footer>
