@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
     <!--bootstrap-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--script-->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!--Google Fonts "LATO - 300; 400; 900"-->
@@ -40,25 +40,25 @@
     </header>
         
     <main class="main">
-        <div class="main__form__vid"><!--Formulario-->
-            <form>
+        <div class="main__form__vid">
+            <!-- <form>
                 <p>Formulario de contacto.</p>
-                <div><!--Input nombre-->
+                <div>
                     <label for="nombre">Nombre: </label><br>
                     <input required type="text" id="nombre" placeholder="Ingrese su nombre">
                 </div>
                
-                <div><!--Input apellido-->
+                <div>
                     <label for="apellido">Apellido: </label><br>
                     <input required type="text" id="apellido" placeholder="Ingrese su apellido">
                 </div>
                 
-                <div><!--Input telefono de contacto-->
+                <div>
                     <label for="teléfono de contacto">Teléfono de contacto:</label><br>
                     <input type="number" id="teléfono de contacto" placeholder="Ingrese su número">
                 </div>
                 
-                <div><!--Select motivo de consulta-->
+                <div>
                     <label for="tipo">Motivo de consulta:</label><br>
                     <select name="tipo" id="tipo">
                         <option value="Plazo de entrega">Plazo de entrega</option> 
@@ -71,7 +71,43 @@
                     <textarea name="consulta" id="consulta" placeholder="Otra consulta" cols="25" rows="5"></textarea>
                 </div>
                     <button>Enviar</button>
-            </form>
+            </form> -->
+
+            <section>
+                <h2 class="text-center">Contactanos</h2>
+                <table class="table container bg-secondary text-light table-hover">
+                    <thead class="">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Telefono de contacto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Riquelme</td>
+                            <td>1234567890</td>
+                        </tr>
+                        <tr>
+                            <td>Martin</td>
+                            <td>Palermo</td>
+                            <td>1234567890</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Te contactamos</h2>
+                <form action="" class="">
+                    <input type="text" placeholder="Nombre" class="form-control mb-2">
+                    <input type="text" placeholder="Apellido" class="form-control mb-2">
+                    <input type="email"  placeholder="Email" class="form-control mb-2">
+                    <input type="number" placeholder="Telefono" class="form-control mb-2">
+                    <button class="btn btn-primary mb-2" type="submit">Enviar</button>
+                </form>
+            </section>
             
             <video autoplay loop muted class="form__vid" src="../media/video1.mp4">
         </div>
@@ -79,6 +115,8 @@
         <div>
             <img width="100%" min-height="100vh" src="../media/fondo.jpg">
         </div>  
+
+        
     </main>    
    
     <footer class="baja__footer">
