@@ -1,0 +1,44 @@
+.header {
+    background-image: url(../media/blackground.png);
+    background-size: cover;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0.1rem 1rem rgba(255, 255, 255, 0.548);
+    z-index: 1;
+}
+
+.header {
+    &__h1 {
+        display: inline;
+        font-size: 3.1rem;
+    
+        color: white;
+        text-shadow: 0.1px 0.01px 1rem rgba(255, 255, 255, 0.421);
+    
+        padding-left: 0.6rem;
+        transition: transform 1s;
+
+        animation-name: h1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    &__h1:hover {
+        transform: skew(2deg);
+    }
+}
+
+@keyframes h1 {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
+}
