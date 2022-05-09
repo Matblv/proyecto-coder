@@ -10,9 +10,7 @@
     top: 0;
     box-shadow: 0 0.1rem 1rem rgba(255, 255, 255, 0.548);
     z-index: 1;
-}
 
-.header {
     &__h1 {
         display: inline;
         font-size: 3.1rem;
@@ -32,13 +30,57 @@
     &__h1:hover {
         transform: skew(2deg);
     }
+    @keyframes h1 {
+        from {
+            color: white;
+        }
+        to {
+            color: black;
+        }
+    }
+
+    &__busq {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__busq--1 {
+        border-radius: 0.4rem;
+        background-color: rgba(245, 245, 245, 0.775);
+        width: 18.7rem;
+        height: 1.6rem;
+    }
+
+    &__busq--but {
+        border-radius: 0.3rem;
+        background-color: rgba(245, 245, 245, 0.775);
+        width: 3.75rem;
+        margin-left: 1rem;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__nav--txt {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        top: 0;
+    }
+
+    &__nav--li {
+        display: inline-block;
+        background-color:rgba(41, 41, 41, 0.4);
+        margin-right: 0.6rem;
+        border-radius: 0.43rem;
+        border: 0.06rem solid rgb(0, 0, 0, 0.700);
+        transition: transform 0.5s;
+        padding: 0.37rem 0.31rem;
+    }
+    &__nav--li:hover {
+        transform: skew(-7deg);
+    }
+
 }
 
-@keyframes h1 {
-    from {
-        color: white;
-    }
-    to {
-        color: black;
-    }
-}

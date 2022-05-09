@@ -1,0 +1,78 @@
+.footer {
+
+    &__grid {
+        background-color: rgb(0, 0, 0);
+        height: 9rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 17rem 2rem;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "elem1 elem2";
+    }
+
+    &__h1--grid {
+        display: flex;
+        align-items: center;
+        font-size: 3.1rem;
+        color: white;
+        text-shadow: 0.1px 0.01px 1rem rgba(255, 255, 255, 0.421);
+        
+        
+        padding-left: 0.6rem;
+
+        grid-area: elem1;
+    }
+
+    &__links-externos--grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: elem2;
+    }
+
+    &__links-externos--1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__links-externos--2 {
+        width: 3.1rem;
+    }
+
+    &__div__li {
+        margin: 1rem 0;
+    }
+
+    &__div__a--1 {
+        color: purple;
+        text-decoration: none;
+        font-size: 1.25rem;
+
+        margin: 1.8rem -1.25rem;
+        font-weight: bold;
+    }
+
+    &__div__a--2 {
+        color: green;
+        text-decoration: none;
+        font-size: 1.25rem;
+        
+        margin: 1.8rem -1.25rem;
+        font-weight: bold;
+    }
+    
+    &__div {
+        &__a--1, &__a--2 {
+            font-size: 1rem;
+        }
+    }
+}
+
+.logo-redes {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.3rem 2.5rem;
+}
