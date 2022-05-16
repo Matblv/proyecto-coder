@@ -22,14 +22,15 @@
     <header  class="header">
         <h1 class="header__h1">NEKTAR</h1>
         
-        <div class="header__busq">
-            <label for="búsqueda"></label>
-            <input class="header__busq--1" type="text" id="búsqueda" placeholder="  Buscar">
-            <button class="header__busq--but">Buscar</button>
+        <div class="header__buscar">    
+            <label for="busqueda"></label>
+            <input type="text" placeholder="Buscar" required>
+            <button class="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </div>
-        <i class="fas fa-bars"></i>
-        <div class="header__nav"> <!-- nav-->
-            <nav>
+         <!-- nav-->
+            <!-- <nav>
                 <ul>
                     <li class="header__nav--li"><a class="header__nav--txt" href="index.html" >Incio</a></li>
                     <li class="header__nav--li"><a class="header__nav--txt" href="pages/productos.html">Productos</a></li>
@@ -37,7 +38,61 @@
                     <li class="header__nav--li"><a class="header__nav--txt" href="pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
                     <li class="header__nav--li"><a class="header__nav--txt" href="pages/contacto.html">Contacto</a></li>
                 </ul>
-            </nav>    
+            </nav> -->
+
+                <!-- <section class="header__nav__mobile">
+
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="p-4">
+                        <h5 class="text-white h4 ">Navegación</h5>
+                        <ul class="header__nav__ul">
+                            <li class="header__nav__ul__li"><a class="header__nav__ul__txt" href="index.html">Incio</a></li>
+                            <li class="header__nav__ul__li"><a class="header__nav__ul__txt" href="pages/productos.html">Productos</a></li>
+                            <li class="header__nav__ul__li"><a class="header__nav__ul__txt" href="pages/promociones.html">Promociones</a></li>
+                            <li class="header__nav__ul__li"><a class="header__nav__ul__txt" href="pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                            <li class="header__nav__ul__li"><a class="header__nav__ul__txt" href="pages/contacto.html">Contacto</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark">
+                        <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                        
+                </section>
+                  </nav> -->
+   
+                  <section class="header__navbar">
+
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle bb" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Navegación
+                                </a>
+                                <ul id="navbarNavDarkDropdown" class="dropdown-menu dropdown-menu-dark aa" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item bg-dark" href="./index.html">Inicio</a></li>
+                                    <li><a class="dropdown-item bg-dark" href="./pages/productos.html">Productos</a></li>
+                                    <li><a class="dropdown-item bg-dark" href="./pages/promociones.html">Promociones</a></li>
+                                    <li><a class="dropdown-item bg-dark" href="./pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                                    <li><a class="dropdown-item bg-dark" href="./pages/contacto.html">Contacto</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+
+                  </section>
+
+
         </div>    
     </header>        
     <main class="main">

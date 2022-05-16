@@ -1,5 +1,5 @@
 .header {
-    background-image: url(../media/blackground.png);
+    background-color: black; 
     background-size: cover;
     width: 100%;
 
@@ -10,6 +10,15 @@
     top: 0;
     box-shadow: 0 0.1rem 1rem rgba(255, 255, 255, 0.548);
     z-index: 1;
+
+    &__navbar {
+        padding-right: 3rem;
+
+        &__ul__li {
+            background-color: white;
+        }
+    }
+
 
     &__h1 {
         display: inline;
@@ -82,5 +91,74 @@
         transform: skew(-7deg);
     }
 
+}
+
+.header__buscar {
+    position: absolute;
+    padding: 5px;
+    right: 15%;
+    top: 0.5rem;
+}
+
+.header__buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    background-color: whitesmoke;
+}
+
+.btn {
+    position: absolute;
+    margin-top: -8px;
+    right: 0%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__buscar:hover input {
+    width: 240px;
+}
+.header__buscar input:focus {
+    width: 240px;
+}
+
+@media screen and (max-width:426px) {
+
+    .header {
+
+        &__h1 {
+        }
+
+        &__buscar {
+            top: 15%;
+            right: 32%;
+        }
+
+        &__navbar {
+            padding-right: 0%;
+        }
+
+        }
+
+    .aa {
+        width: 1rem;
+    }
+
+    .bb {
+       
+        visibility: hidden;
+    }
 }
 
