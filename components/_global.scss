@@ -1,0 +1,59 @@
+.headerTemplate {
+    background-color: black; 
+    background-size: cover;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0.1rem 1rem rgba(255, 255, 255, 0.548);
+    z-index: 1;
+}
+
+@mixin mainTemplate ($margin-top, $color, $bg-size) {
+    background-image: url(../media/blackground.png);
+    background-size: cover;
+    margin-top: $margin-top;
+    color: black;
+    width: 100%;
+
+    @if ($bg-size == "yes") {
+        background-size: contain;
+    }
+
+    @if ($color == "yes") {
+        color: white;
+
+    }
+}
+
+@each $changecol in (p) {
+    #{$changecol} {
+        color: gold;
+    }    
+}
+
+
+.derechos {
+    font-size: 5rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+$spanD: (
+    derechos: silver,
+);
+
+@each $name, $color in $spanD {
+    .#{$name} {
+        background-color: $color;
+        color: black;
+        font-size: 2rem;
+        
+    }
+
+
+}

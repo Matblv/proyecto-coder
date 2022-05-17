@@ -1,18 +1,13 @@
-.header {
-    background-color: black; 
-    background-size: cover;
-    width: 100%;
+.main {
+    @include mainTemplate (3.75rem, yes, yes);
+}
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    box-shadow: 0 0.1rem 1rem rgba(255, 255, 255, 0.548);
-    z-index: 1;
+.header {
+    @extend .headerTemplate;
 
     &__navbar {
         padding-right: 3rem;
+        z-index: 2;
 
         &__ul__li {
             background-color: white;
@@ -36,7 +31,7 @@
         animation-direction: alternate;
     }
 
-    &__h1:hover {
+    &:hover {
         transform: skew(2deg);
     }
     @keyframes h1 {
