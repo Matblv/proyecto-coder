@@ -4,6 +4,7 @@
 
 .main {
     @include mainTemplate(3.75rem, yes, yes);
+    background-size: cover;
 
     &__form__vid {
         display: flex;
@@ -43,23 +44,20 @@
         box-shadow: inset 0.025rem 0.018rem 0.03rem whitesmoke;
     
         margin-top: 3.12rem;
-        margin-left: 0;
-        margin-right: 5rem;
+        
+        
     }
 
     &__textophoto {
-        font-size: 1.25rem;
-    
-        margin-bottom: 0.6rem;
-        margin-top: 1rem;
-        margin-left: 2rem;
-
+        font-size: 1rem;
         // color: white;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.451), rgba(255, 255, 255, 0.177));
         border: solid 0.1rem rgba(255, 255, 255, 0.516);
         text-align: center;
         transition: transform 1s;
-        width: 11rem;
+        width: 240px;
+        height: auto;
+        margin: 5px 0 0 0;
     }
 
     &__mapa__txt {
@@ -194,6 +192,12 @@
     "ele7 ele4 ele5 ele6 ele8";
 }
 
+.main--productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .mapa {
     display: flex;
     justify-content: space-evenly;
@@ -252,21 +256,94 @@
             // margin-left: 2rem;
         }
 
-        &__mapa--txt {
+        &__mapa__txt {
             flex-direction: row;
             flex-wrap: wrap;
             width: 100%;
             text-align: center;
+            height: auto;
+            
         }
 
-        // &__textophoto {
-        //     margin: 1rem 0;
-        //     margin-left: 8.5rem;
-        // }
+        &__artic__publi--grid--1, &__artic__publi--grid--2 {
+            display: none;
+        }
+
+        &__artic__div--grid1, &__artic__div--grid2, &__artic__div--grid3, &__artic__div--grid4, &__artic__div--grid5, &__artic__div--grid6 {
+            margin: 0%;
+            padding: 0%;
+            
+        }
+
+        &__img__prod1, &__textophoto1 {
+            margin: 0%;
+            margin-top: 0.5rem;
+            padding: 0%;
+            
+        }
+
+        &__textophoto1 {
+            
+            height: auto;
+            width: 240px;
+            text-align: center;
+            flex-wrap: wrap;
+            
+            span {
+                font-size: 1.2rem;
+                color: gold;
+                text-decoration: underline;
+                margin: 5px 20px;
+            }
+        }
+
+        &__img__prod, &__textophoto {
+            margin: 0%;
+            margin-top: 0.5rem;
+            padding: 0%;
+            
+        }
+
+        &__textophoto1 {
+            
+            height: auto;
+            width: 240px;
+            text-align: center;
+            flex-wrap: wrap;
+            
+            span {
+                font-size: 1.2rem;
+                color: gold;
+                text-decoration: underline;
+                margin: 5px 20px;
+            }
+        }
+
+        &__ord {
+            text-align: center;
+        }
     }
+
+    .main--productos--grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ele1"
+        "ele2"
+        "ele3";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
+    }
+
     .mapa {
         flex-direction: row;
         flex-wrap: wrap;
+        
+    }
+
+    .derechos {
+        text-align: center;
     }
 }

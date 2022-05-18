@@ -22,6 +22,26 @@
         padding-left: 0.6rem;
 
         grid-area: elem1;
+    
+
+        padding-left: 0.6rem;
+        transition: transform 1s;
+
+        animation-name: h1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+    }
+
+
+    @keyframes h1 {
+        from {
+            color: white;
+        }
+        to {
+            color: black;
+        }
     }
 
     &__links-externos--grid {

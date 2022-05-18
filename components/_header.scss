@@ -31,9 +31,8 @@
         animation-direction: alternate;
     }
 
-    &:hover {
-        transform: skew(2deg);
-    }
+    
+
     @keyframes h1 {
         from {
             color: white;
@@ -150,12 +149,8 @@
         }
 
 
-    .aa {
-        width: 1rem;
-    }
 
-    .bb {
-        display: none;
-    }
+
+    
 }
 
