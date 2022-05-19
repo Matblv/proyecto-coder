@@ -2,16 +2,24 @@
     @extend .headerTemplate;
 }
 
+.form__vid {
+    height: 20rem;
+    width: auto;
+    margin: 48px;
+}
+
 .main {
     @include mainTemplate(3.75rem, yes, yes);
     background-size: cover;
 
-    &__form__vid {
+    
+
+    &__contacto {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
     }
+    
 
     &__portada {
         width: 100%;
@@ -179,9 +187,27 @@
     &__textophoto1:hover {
         transform: scale(1.1);
     }
+
+    &__preguntasfrecuentes {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        
+    }
     
 }
 
+.pf__main__titulo {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.pf__bg {
+    width: 100vw;
+    height: auto;
+}
 
 .main--productos--grid {
     display: grid;
@@ -212,6 +238,10 @@
     color: blue;
 }
 
+.prueba2 {
+    margin-bottom: 20rem;
+}
+
 .carusel {
     height: 8%;
     width: auto;
@@ -226,6 +256,7 @@
 .prueba {
     z-index: -2;
 }
+
 
 @media screen and (max-width:426px) {
     .banner {
@@ -322,6 +353,18 @@
         &__ord {
             text-align: center;
         }
+
+        &__form__vid {
+            display: none;
+        }
+
+        &__contacto {
+            margin: 0%;
+            width: 100%;
+
+            
+        }
+
     }
 
     .main--productos--grid {
