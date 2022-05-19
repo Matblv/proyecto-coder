@@ -217,5 +217,17 @@
         justify-content: center;
     }
 
+    
+}
 
+@media screen and (max-width:376px) {
+    .footer {
+        &__links-externos--2 {
+            display: none;
+        }
+    }
+
+    .logo-redes {
+        margin: 50% 0%;
+    }
 }

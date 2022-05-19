@@ -70,7 +70,8 @@
 
     &__mapa__txt {
         // color: whitesmoke;
-        font-size: $fontPLarge;
+        // font-size: $fontPLarge;
+        font-size: 1.3rem;
         background-color: rgba(255, 255, 255, 0.116);
         display: flex;
         justify-content: center;
@@ -132,31 +133,50 @@
 
     &__artic__div--grid1 {
         grid-area: ele1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
     }
 
-    &__artic__div--grid1 {
+    &__artic__div--grid2 {
         grid-area: ele2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__artic__div--grid3 {
         grid-area: ele3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__artic__div--grid4 {
         grid-area: ele4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__artic__div--grid5 {
         grid-area: ele5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__artic__div--grid6 {
         grid-area: ele6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__img__prod1 {
-        width: 18.75rem;
-        height: 21.8rem;
+        width: 15rem;
+        height: 19rem;
         
         padding: 0.12rem;
         
@@ -165,8 +185,7 @@
         box-shadow: inset 0.025rem 0.018rem 0.03rem whitesmoke;
         
         margin-top: 1.12rem;
-        margin-right: 2.25rem;
-        margin-left: 2.25rem;
+        
     }
 
     &__textophoto1 {
@@ -174,13 +193,14 @@
     
         margin-top: 1rem;
         margin-bottom: 0.6rem;
-        margin-left: 6.7rem;
+        
 
         color: white;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.451), rgba(255, 255, 255, 0.177));
         border: solid 0.1rem rgba(255, 255, 255, 0.516);
         text-align: center;
-        width: 11rem;
+        width: 240px;
+        height: auto;
         transition: transform 1s;
     }
 
@@ -246,6 +266,10 @@
     height: 8%;
     width: auto;
     object-fit: cover;
+
+    &__responsive {
+        display: none;
+    }
     
 }
 
@@ -255,6 +279,83 @@
 
 .prueba {
     z-index: -2;
+}
+
+
+
+@media screen and (max-width:769px) {
+    .mapa {
+        flex-direction: column;
+    }
+
+    .carusel {
+    
+        &__display {
+        display: none;
+        }
+
+        &__responsive {
+            display: block;
+            width: 100vw;
+            height: 50%;
+        }
+    }
+    .main {
+
+        &__textophoto, &__textophoto1 {
+            margin-top: 1rem;
+            font-size: 1.4rem;
+        }
+
+        &__article {
+            flex-direction: column;
+            align-items: center;
+        }
+       
+        &__mapa__txt {
+            margin-top: 2rem;
+
+        }
+
+        &__form__vid {
+            display: none;
+        }
+
+        &__img__prod1 {
+            width: 75%;
+            height: 25rem;
+        }
+
+        
+
+        &__artic__div--grid1, &__artic__div--grid2, &__artic__div--grid3, &__artic__div--grid4, &__artic__div--grid5, &__artic__div--grid6 {
+            margin-bottom: 2rem;
+            margin-top: 0.5rem;
+            border: solid 1px whitesmoke;
+            background-color: rgba(255, 255, 255, 0.099);
+            width: 60%;  
+        }
+
+        &__artic__publi--grid--1, &__artic__publi--grid--2 {
+            display: none;
+            width: 75%;
+            
+            
+        }
+
+        .main--productos--grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "ele1"
+            "ele2"
+            "ele3";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+    } 
 }
 
 
@@ -271,6 +372,13 @@
 
     .main {
 
+        &__artic__div  {
+            margin-bottom: 2rem;
+            margin-top: 0.5rem;
+            border: solid 1px whitesmoke;
+            background-color: rgba(255, 255, 255, 0.099);
+        }
+
         &__article {
             display: flex;
             justify-content: center;
@@ -282,16 +390,14 @@
             background-attachment: local;
         }
 
-        &__img__prod {
-            margin: 0%;
-            // margin-left: 2rem;
-        }
 
         &__mapa__txt {
             flex-direction: row;
             flex-wrap: wrap;
-            width: 100%;
+            font-size: 1.2rem;
+            margin-top: 0.8rem;
             text-align: center;
+            width: 100vw;
             height: auto;
             
         }
@@ -303,6 +409,7 @@
         &__artic__div--grid1, &__artic__div--grid2, &__artic__div--grid3, &__artic__div--grid4, &__artic__div--grid5, &__artic__div--grid6 {
             margin: 0%;
             padding: 0%;
+            
             
         }
 
@@ -330,7 +437,7 @@
 
         &__img__prod, &__textophoto {
             margin: 0%;
-            margin-top: 0.5rem;
+            margin-bottom: 1rem;
             padding: 0%;
             
         }
