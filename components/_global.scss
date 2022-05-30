@@ -1,7 +1,8 @@
 .headerTemplate {
     background-color: black; 
     background-size: cover;
-    width: 100%;
+    width: 100vw;
+    
 
     display: flex;
     justify-content: space-between;
@@ -31,7 +32,7 @@
 
 @each $changecol in (p) {
     #{$changecol} {
-        color: gold;
+        // color: gold;
     }    
 }
 

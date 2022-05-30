@@ -24,53 +24,59 @@
         
         <div class="header__buscar">    
             <label for="busqueda"></label>
-            <input type="text" placeholder="Buscar" required>
+            <input type="text" placeholder="Buscar" class="btn__busc" required>
             <button class="btn">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
 
-        <section class="header__navbar">
-
-                    <nav class="navbar navbar-expand-lg navbar-dark">
-                        <div class="">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                            <ul class="navbar-nav">
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Navegación
-                                </a>
-                                <ul id="navbarNavDarkDropdown" class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                    <li><a class="dropdown-item bg-dark" href="../index.html">Inicio</a></li>
-                                    <li><a class="dropdown-item bg-dark" href="./productos.html"">Productos</a></li>
-                                    <li><a class="dropdown-item bg-dark" href="./promociones.html">Promociones</a></li>
-                                    <li><a class="dropdown-item bg-dark" href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                                    <li><a class="dropdown-item bg-dark" href="./contacto.html">Contacto</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
-
-                  </section>   
+          
     </header>    
 
     <main class="main" >
+
+        <section class="header__navbar">
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light dinone" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Navegación
+                        </a>
+                        <ul id="navbarNavDarkDropdown" class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item bg-dark" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item bg-dark" href="./productos.html"">Productos</a></li>
+                            <li><a class="dropdown-item bg-dark" href="./promociones.html">Promociones</a></li>
+                            <li><a class="dropdown-item bg-dark" href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                            <li><a class="dropdown-item bg-dark" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+          </section> 
+
         <div class="alert alert-danger fs-6 text-decoration-underline text-end" role="alert">
             PROHIBIDA LA VENTA A MENORES DE 18 AÑOS.
           </div>
-        <div class="main__ord"> <!--ordernar por-->
-            <label for="tipo">Ordenar por: </label>
-            <select name="tipo" id="tipo">
-                <option value="mas vendido">Bebidas más vendidas</option>
-                <option value="mayor precio">Mayor precio</option>
-                <option value="menor precio">Menor precio</option>                
-            </select>
-        </div>
+
+        <div class="dropdown position-relative alert">
+            <button class="btn btn-secondary dropdown-toggle w-25 position-absolute top-0 start-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Ordenar por
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Bebidas más vendidas</a></li>
+              <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+              <li><a class="dropdown-item" href="#">Menor precio</a></li>
+            </ul>
+          </div>
         
         <section class="main--productos--grid"><!--imágenes!-->
             <div class="main__artic__publi--grid--1">
@@ -80,39 +86,39 @@
 
             <div class="main__artic__publi--grid--2">
                 <video class="main__video" autoplay muted loop src="../media/Video1-2.mp4"></video>
-                <h3 class="main__video--titulo">Hacé tu pedido online</h3>
+                <h3 class="main__video--titulo">Todo lo que buscas</h3>
             </div>
 
             
             <div class="main__artic__div--grid1">
-                <img class="main__img__prod1" src="../media/producto2.jpg" alt="Branca750">
+                <img class="main__img__prod1" src="../assets/productos/fernet.jpg" alt="Branca750">
                 <p class="main__textophoto1">Branca 750ml - Fernet <span>$900</span></p>
             </div>
             <div class="main__artic__div--grid2">
-                <img class="main__img__prod1" src="../media/producto3.jpg" alt="Smirnoff750">
+                <img class="main__img__prod1" src="../assets/productos/smirnoff.jpg" alt="Smirnoff750">
                 <p class="main__textophoto1">Smirnoff 750ml - Vodka <span>$800</span></p>
             </div>
             <div class="main__artic__div--grid3">
-                <img class="main__img__prod1" src="../media/producto4.jpg" alt="Gancia950">
+                <img class="main__img__prod1" src="..//assets/productos/gancia.jpg" alt="Gancia950">
                 <p class="main__textophoto1">Gancia 950ml - Aperitivo<span>$600</span></p>
             </div>
             <div class="main__artic__div--grid4">
-                <img class="main__img__prod1" src="../media/producto3.jpg" alt="Fernet1">
+                <img class="main__img__prod1" src="../assets/productos/fernet.jpg" alt="Fernet1">
                 <p class="main__textophoto1">Branca 1L - Fernet <span>$1200</span></p>
             </div>
             <div class="main__artic__div--grid5">
-                <img class="main__img__prod1" src="../media/producto4.jpg" alt="Smirnoff950">
+                <img class="main__img__prod1" src="../assets/productos/smirnoff.jpg" alt="Smirnoff950">
                 <p class="main__textophoto1">Smirnoff 950ml - Vodka <span>$1000</span></p>
             </div>
             <div class="main__artic__div--grid6">
-                <img class="main__img__prod1" src="../media/producto2.jpg" alt="Gancia125">
+                <img class="main__img__prod1" src="..//assets/productos/gancia.jpg" alt="Gancia125">
                 <p class="main__textophoto1">Gancia 1.25L - Aperitivo <span>$800</span></p>
             </div>
         </section>
            
     </main>
        
-    <footer>
+    <footer class="footer__grid">
         <div class="footer__div">
             <div>
                 <h1 class="header__h1">NEKTAR</h1>

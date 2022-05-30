@@ -1,5 +1,9 @@
 .footer {
 
+    &__copyright {
+        color: black;
+    }
+
     &__grid {
         background-color: rgb(0, 0, 0);
         height: 9rem;
@@ -131,13 +135,7 @@
         }
 
 
-    .aa {
-        width: 1rem;
-    }
-
-    .bb {
-        display: none;
-    }
+    
 
     .main {
 
@@ -222,12 +220,24 @@
 
 @media screen and (max-width:376px) {
     .footer {
+
+        &__div {
+            display: flex;
+            justify-content: space-around;
+        }
+
         &__links-externos--2 {
             display: none;
+            margin-left: 0%;
         }
+
     }
 
     .logo-redes {
         margin: 50% 0%;
     }
+
+    
+
+    
 }

@@ -23,11 +23,16 @@
         
         <div class="header__buscar">    
           <label for="busqueda"></label>
-          <input type="text" placeholder="Buscar" required>
+          <input type="text" placeholder="Buscar" class="btn__busc" required>
           <button class="btn">
               <i class="fa-solid fa-magnifying-glass"></i>
           </button>
       </div>
+
+     
+    </header>   
+    
+    <main class="main">        
 
       <section class="header__navbar">
 
@@ -39,10 +44,10 @@
               <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bb text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle bb text-light dinone" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Navegación
                     </a>
-                    <ul id="navbarNavDarkDropdown" class="dropdown-menu dropdown-menu-dark aa" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <ul id="navbarNavDarkDropdown" class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><a class="dropdown-item bg-dark" href="../index.html">Inicio</a></li>
                         <li><a class="dropdown-item bg-dark" href="./productos.html"">Productos</a></li>
                         <li><a class="dropdown-item bg-dark" href="./promociones.html">Promociones</a></li>
@@ -56,14 +61,12 @@
           </nav>
 
       </section>  
-    </header>   
-    
-    <main class="main">        
+
         <h2 class="pf__main__titulo">Preguntas frecuentes.</h2>    
         
         <section class="main__preguntasfrecuentes">
 
-          <div class="accordion accordion-flush w-75" id="accordionFlushExample">
+          <div class="accordion accordion-flush w-75 zindex" id="accordionFlushExample">
             <div class="accordion-item rounded-top bg-transparent">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed text-center bg-light text-uppercase border-bottom border-5 rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -75,7 +78,7 @@
               </div>
             </div>
             <div class="accordion-item rounded-top bg-transparent">
-              <h2 class="accordion-header" id="flush-headingTwo">
+              <h2 class="accordion-header z-in" id="flush-headingTwo">
                 <button class="accordion-button collapsed text-center bg-light text-uppercase border-bottom border-5 rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   ¿Qué pasa si quiero cancelar una compra?
                 </button>

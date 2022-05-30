@@ -2,6 +2,10 @@
     @extend .headerTemplate;
 }
 
+.z-in {
+    z-index: 0;
+}
+
 .form__vid {
     height: 20rem;
     width: auto;
@@ -13,6 +17,23 @@
     background-size: cover;
 
     
+    &__textophoto2 {
+        font-size: 1.2rem;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.451), rgba(255, 255, 255, 0.177));
+        border: solid 0.1rem rgba(255, 255, 255, 0.516);
+        text-align: center;
+        transition: transform 1s;
+        width: 20rem;
+        height: 5rem;
+        margin: 5px 0 0 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        span {
+            color: yellow;
+        }
+    }
 
     &__contacto {
         display: flex;
@@ -39,10 +60,11 @@
 
     &__artic__div {
         display: inline-block;
+        
     }
 
     &__img__prod {
-        width: 15rem;
+        width: auto;
         height: 19rem;
         
         padding: 0.12rem;
@@ -57,15 +79,23 @@
     }
 
     &__textophoto {
-        font-size: 1rem;
+        font-size: 1.4rem;
         // color: white;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.451), rgba(255, 255, 255, 0.177));
         border: solid 0.1rem rgba(255, 255, 255, 0.516);
         text-align: center;
         transition: transform 1s;
-        width: 240px;
+        width: 100%;
         height: auto;
         margin: 5px 0 0 0;
+        display: flex;
+        justify-content: center;
+
+        span {
+            color: yellow;
+        }
+
+    
     }
 
     &__mapa__txt {
@@ -175,8 +205,8 @@
     }
 
     &__img__prod1 {
-        width: 15rem;
-        height: 19rem;
+        width: auto;
+        height: 18rem;
         
         padding: 0.12rem;
         
@@ -185,6 +215,8 @@
         box-shadow: inset 0.025rem 0.018rem 0.03rem whitesmoke;
         
         margin-top: 1.12rem;
+
+        
         
     }
 
@@ -202,11 +234,15 @@
         width: 240px;
         height: auto;
         transition: transform 1s;
+
+        span {
+            color: yellow;
+        }
     }
 
-    &__textophoto1:hover {
-        transform: scale(1.1);
-    }
+    // &__textophoto1:hover {
+    //     transform: scale(1.1);
+    // }
 
     &__preguntasfrecuentes {
         width: 100%;
@@ -277,8 +313,17 @@
     height: 400rem;
 }
 
-.prueba {
-    z-index: -2;
+.button-opacity {
+    opacity: 0;
+    z-index: -1;
+}
+
+.button-opacity:hover {
+    opacity: 1;
+}
+
+.zindex {
+    z-index: 0;
 }
 
 
@@ -302,9 +347,9 @@
     }
     .main {
 
-        &__textophoto, &__textophoto1 {
+        &__textophoto, &__textophoto1, &__textophoto2 {
             margin-top: 1rem;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
 
         &__article {
@@ -333,7 +378,7 @@
             margin-top: 0.5rem;
             border: solid 1px whitesmoke;
             background-color: rgba(255, 255, 255, 0.099);
-            width: 60%;  
+            width: 80%;  
         }
 
         &__artic__publi--grid--1, &__artic__publi--grid--2 {
@@ -364,6 +409,8 @@
         max-height: 10rem;
     }
 
+
+
     .carusel {
         height: 2.5%;
         
@@ -377,6 +424,8 @@
             margin-top: 0.5rem;
             border: solid 1px whitesmoke;
             background-color: rgba(255, 255, 255, 0.099);
+            width: 90%;
+            
         }
 
         &__article {
@@ -404,48 +453,47 @@
 
         &__artic__publi--grid--1, &__artic__publi--grid--2 {
             display: none;
+        
         }
 
         &__artic__div--grid1, &__artic__div--grid2, &__artic__div--grid3, &__artic__div--grid4, &__artic__div--grid5, &__artic__div--grid6 {
-            margin: 0%;
+            margin: 1rem 0%;
             padding: 0%;
+            width: 90%;
             
             
         }
 
         &__img__prod1, &__textophoto1 {
             margin: 0%;
-            margin-top: 0.5rem;
+            
             padding: 0%;
-            
-        }
+            max-width: 100%;
+            max-height: 100%;
 
-        &__textophoto1 {
-            
+            width: 100%;
             height: auto;
-            width: 240px;
-            text-align: center;
-            flex-wrap: wrap;
             
-            span {
-                font-size: 1.2rem;
-                color: gold;
-                text-decoration: underline;
-                margin: 5px 20px;
-            }
+            margin-bottom: 1rem;
         }
 
-        &__img__prod, &__textophoto {
+       
+
+        &__img__prod, &__textophoto, &__textophoto2 {
             margin: 0%;
             margin-bottom: 1rem;
             padding: 0%;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
             
         }
 
         &__textophoto1 {
             
             height: auto;
-            width: 240px;
+            width: 100vw;
             text-align: center;
             flex-wrap: wrap;
             
@@ -496,4 +544,25 @@
     .derechos {
         text-align: center;
     }
+
+
 }
+
+// @media screen and (max-width:376px) {
+    
+    
+//     main { 
+
+        
+
+
+//         &__textophoto2 {
+//             margin: 0%;
+//             margin-bottom: 1rem;
+//             padding: 0%;
+//             width: 100vw;
+
+
+//         }
+//     }
+// }
