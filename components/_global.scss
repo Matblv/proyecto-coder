@@ -14,7 +14,7 @@
 }
 
 @mixin mainTemplate ($margin-top, $color, $bg-size) {
-    background-image: url(../media/blackground.png);
+    background-image: url(../assets/blackground-tiny.png);
     background-size: cover;
     margin-top: $margin-top;
     color: black;
